@@ -1,0 +1,18 @@
+---
+import Baselayout from "../layouts/Baselayout.astro";
+const title = "Home";
+---
+
+<style>
+	button>a {
+		@apply bg-blue-300 py-4 px-8 rounded-sm hover:opacity-80;
+	}
+</style>
+
+<Baselayout title={title}>
+	<h1 class="text-5xl text-indigo-800">Astro!</h1>
+	<p>{title}</p>
+	<div class="mt-10">
+	<button><a href="/contact">Go Contact Page!</a></button>
+</div>
+</Baselayout>
